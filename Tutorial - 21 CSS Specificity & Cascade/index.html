@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* The Specificity of this (Element Selector) is 1 */
+        h1 {
+            color: aqua;
+        }
+
+        /* The Specificity of this (Class Selecor) is 10 */
+        .cpurple {
+            background-color: purple;
+
+        }
+
+        /* The Specificity of this (Class Selecor) is 10 */
+        .cred {
+            background-color: red;
+        }
+
+        /* The Specificity of this (Class Selecor) is 10 */
+        .yellow {
+            background-color: yellow;
+        }
+
+        /* The Specificity of this (Element + Class Selecor) is 1+ 10 = 10 */
+        h1.yellow {
+            background-color: yellowgreen;
+        }
+
+        /* This is an example of attribute selector. The Specificity of this selector is 10 */
+        [data-x=a]{
+            color:maroon;
+        }
+        /* The Specificity of this selector is 1 + 10 + 10 + 10 + 10 = 14 */
+        /* Element a = 1
+            Class harryClass = 10
+            Rohan-Class = 10
+            [href] attribute selector = 10 
+            :hover pseudo = 10 
+            Total = 41*/
+        a.harryclass.rohan-class[href]:hover{
+            color: blue;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1 class="yellow cred cpurple">CSS Specificity & Cascade</h1>
+    <h2>Heading 2 CSS Specificity & Cascade</h2>
+</body>
+
+</html>

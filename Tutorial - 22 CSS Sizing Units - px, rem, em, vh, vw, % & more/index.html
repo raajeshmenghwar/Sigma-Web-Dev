@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Sizing</title>
+   <style>
+     *{
+        margin:0;
+        padding:0;
+    }
+    html{
+        font-size: 12px;
+    }
+    .box{
+        box-sizing: border-box;
+        border: 2px solid black;
+           /* Fixed width for the box, not ideal for responsive designs */
+         /* width: 2048px; */
+         width: 80vw; 
+    }
+
+         
+
+   </style>
+
+</head>
+<body>
+    <div class="box">
+        This is Box
+    </div>
+</body>
+</html>

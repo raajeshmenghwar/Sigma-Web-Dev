@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    <style>
+        h1 {
+            background-color: red;
+            color: white;
+        }
+
+        .class {
+            background-color: black;
+            color: white;
+        }
+
+        #idOne {
+            background-color: aqua;
+            color: blue;
+        }
+        div > p{
+            background-color: brown;
+            color: wheat;
+        }
+        div article{
+            background-color: blue;
+            color: whitesmoke;
+        }
+        *{
+            margin: 0.5%;
+            padding: 0%;
+            font-size: 14px;
+        }
+        a:visited{
+            background-color: aqua;
+        }
+        a:hover{
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>CSS Selectors MasterClass</h1>
+    <ul class="class">
+        <li>Element Selector (using tag)</li>
+        <li>Class Selector (.) </li>
+        <li>ID Selector (#)</li>
+        <li>child Selector (ParentName > ChildName)</li>
+        <li>Descended Selector (Parent Child)</li>
+        <li>Universal Selector (*)</li>
+        <li>Pseduo Selctor (mostly used with ancor tag)</li>
+    </ul>
+    <div id="idOne">
+        ID Selector </div>
+    <div>
+        <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate deleniti placeat aliquam, iste consectetur veniam dignissimos accusamus in earum dolorum perferendis aliquid vel ab, temporibus ipsam a nemo cum molestiae dolores possimus. Dicta assumenda cum culpa necessitatibus facere! Omnis voluptatibus tempore quis possimus.
+        </p>
+    </div>
+    <div>
+        <h1>Descended Selctor</h1>
+        <article>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab saepe similique inventore eligendi laudantium. Placeat tempora, modi sint at amet neque minima molestias eos molestiae quo veniam esse debitis explicabo numquam magni. Accusamus error laborum ipsa quisquam adipisci aliquid nesciunt!</p>
+        </article>
+    </div>
+    <div style="text-align: center;">
+        Follow me on Social Sites
+        <div>
+            <a href="https:linkedin.com/in/raajeshmenghwar"  target="_blank">LinkedIn</a>      
+            <a href="https://www.facebook.com/raajeshmenghwaar"  target="_blank">Facebook</a>  
+            <a href="https://www.instagram.com/raajeshmenghwar"  target="_blank">Instagram</a>    
+        </div>  
+    </div>
+</body>
+
+</html>

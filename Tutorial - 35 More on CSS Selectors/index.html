@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on CSS Selectors</title>
+    <style>
+        /* .box:first-child{
+            background-color: red;
+        } */
+
+        /* .box > p::first-line{
+            color: brown;
+        } */
+
+         /* .boxes * {
+            background-color: burlywood;
+            color: red;
+            border: 2px solid black;
+         } */
+
+         /* [data-color="primary"]{
+            background-color: black;
+            color: whitesmoke;
+         } */
+
+         /* .box:nth-child(even){
+            background-color: blue;
+         }
+         .box:nth-child(odd){
+            background-color: chartreuse;
+         } */
+
+         /* .box:nth-last-child(1){
+            background-color: red;
+         } */
+
+        .boxes::before{
+            content:"Hey I am good";
+            background-color: chocolate;
+        }
+        .boxes::after{
+            content: "But I'm alone";
+            background-color: chocolate;
+        }
+
+        ::selection{
+            color:aquamarine;
+            background-color: black;
+        }
+        input{
+            background-color: rgb(255, 255, 255);
+            color: rgb(126, 43, 43);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="boxes">
+        <div data-color="primary" class="box">Hey This is Box 1</div>
+        <div class="box">Hey This is Box 2</div>
+        <div class="box">Hey This is Box 3</div>
+        <div class="box">Hey This is Box 4</div>
+        <!-- <div class="box"> <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum debitis cumque eos unde voluptatibus reiciendis vero cum quo odio placeat quis laborum, officiis nesciunt consectetur magnam architecto, autem modi. Et quidem velit neque est?</p></div> -->
+         <input type="text" placeholder="What's your name">
+    </div>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* We make the global Variables */
+        :root{
+            --color:rgb(213, 213, 223);
+            --secColor:rgb(138, 138, 178);
+            --fpad:20px;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        ul{
+            display: flex;
+            
+        }
+        ul li{
+            --color:rgb(13, 14, 13);
+            list-style-type: none;
+            padding: var(--fpad);
+            border: 2px solid var(--color);
+        }
+        ul li:first-child{
+            /* --color:rgb(213, 213, 223); -- Local Varibale */
+            --color:rgb(169, 220, 2);
+            /* --color:rgb(213, 213, 223, blue); if Variable NOT Found then it shifts to blue */
+            background-color: var(--color,blue);
+        }
+        .nav{
+            background-color: var(--color);
+        }
+        .container{
+            background-color: var(--secColor);
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+    </div>
+    <div class="container">
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam tempore exercitationem ducimus voluptas aliquid fugiat aspernatur maxime vitae fuga, esse maiores iste reiciendis, nulla culpa non iusto saepe autem eligendi reprehenderit nostrum voluptatibus. Ab non nam pariatur quasi quia culpa repellendus sed obcaecati perspiciatis deleniti?</p>
+    </div>
+</body>
+</html>

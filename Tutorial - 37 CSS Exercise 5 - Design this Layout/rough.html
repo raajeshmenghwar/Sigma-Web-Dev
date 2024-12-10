@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi Color Website</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+        :root {
+            --primary-Color: #090909;
+            --text-color: white;
+            --secondary-Color: rgb(71, 68, 68);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: var(--secondary-Color);
+            font-family: "Poppins", sans-serif;
+        }
+
+        nav {
+            background-color: var(--primary-Color);
+            padding: 15px 0;
+            font-family: "Poppins", sans-serif;
+            position: sticky;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline-block;
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: var(--text-color);
+            font-size: 18px;
+            font-weight: 400;
+        }
+
+        main {
+            margin-top: 20px; /* Slight spacing between navbar and content */
+            padding: 20px;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            border: 2px solid black;
+            padding: 20px;
+            background-color: var(--primary-Color);
+            color: var(--text-color);
+        }
+
+        .box1, .box2 {
+            border: 2px solid #fff;
+            padding: 10px;
+            width: 45%;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/">About Us</a></li>
+                <li><a href="/">Services</a></li>
+                <li><a href="/">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <div class="container">
+                <div class="box1">Box 1</div>
+                <div class="box2">Box 2</div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>

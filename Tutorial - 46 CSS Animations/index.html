@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Animations</title>
+    <style>
+        .box {
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            font-size: 13em;
+            text-align: center;
+            /* animation-name: slideLeft; */
+            /* animation-name: slideRight;
+            animation-name: slideLeft; */
+            animation-name: shrink;
+            animation-duration: 2s;
+        }
+
+        @keyframes slideLeft {
+            from {
+                transform: translateX(300%)
+            }
+        }
+
+        @keyframes slidRight {
+            to {
+                transform: translateX(300%)
+            }
+        }
+
+        @keyframes slideUp {
+            from {
+                transform: translateY(300%)
+            }
+        }
+
+        @keyframes slideDown {
+            from {
+                transform: translateY(300%)
+            }
+        }
+
+        @keyframes rotate {
+            50% {
+                transform: translateZ(360deg)
+            }
+        }
+
+        @keyframes rotate {
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        @keyframes grow {
+            100% {
+                transform: scale(2, 2);
+            }
+        }
+
+        @keyframes shrink {
+            50% {
+                transform: scale(0.5, 0, 5);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        Hi
+    </div>
+</body>
+
+</html>

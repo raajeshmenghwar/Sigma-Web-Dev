@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            font-size: 12px;
+        }
+
+        .box {
+            /* Ensures padding and borders are included in the element's total width and height */
+            box-sizing: border-box;
+
+            border: 2px solid black;
+
+            /*Fixed width for the box, not ideal for responsive designs */
+            /* width: 2048px; */
+
+            /* Makes the width 80% of the viewport width (responsive design) */
+            width: 80vw;
+
+            /* Sets the height to 10% of the viewport height */
+            height: 10vh;
+
+            /* Centers the box horizontally on the page */
+            margin: auto;
+
+            /* Sets the background color of the box */
+            background-color: aquamarine;
+        }
+
+        .container {
+            box-sizing: border-box;
+            /* Includes padding and border in total width/height */
+            border: 2px solid black;
+            /* Black border of 2px */
+
+            /* Fixed width */
+            /* width: 2048px; */
+
+            /* Makes the width 80% of the viewport width */
+            width: 80vw;
+
+            /* Fixed height */
+            /* height: 80vh; */
+
+            /* Minimum height of 80% of the viewport height to adapt dynamically */
+            min-height: 80vh;
+
+            /* Adds a vertical margin of 23px, centers horizontally */
+            margin: 23px auto;
+
+            /* Sets the font size inside this container */
+            font-size: 18px;
+
+            /* Background color of the container */
+            background-color: aquamarine;
+        }
+
+        /* Styling for direct child `<div>` elements of `.container` */
+        .container>div {
+            font-size: 2em;
+            /* Sets font size to 2 times the parent font size */
+            border: 2px solid red;
+            /* Adds a red border of 2px */
+            width: 50%;
+            /* Each child div will occupy 50% of the parent's width */
+        }
+
+        /* Styling for child `<div>` elements inside the child `<div>` of `.container` */
+        .container>div>div {
+            border: 2px solid blue;
+            /* Adds a blue border of 2px */
+            width: 50%;
+            /* Each inner child div occupies 50% of its parent's width */
+        }
+
+        /* Styling for the `.mycont` class */
+        .mycont {
+            border: 2px solid black;
+            /* Black border of 2px */
+            box-sizing: border-box;
+            /* Includes padding and border in total size */
+            margin: 23px auto;
+            /* Adds vertical margin, centers horizontally */
+            color: rgb(0, 0, 0);
+            /* Sets the text color to black */
+            font-size: 22px;
+            /* Sets font size inside this container */
+            /* Use 100% of the smaller viewport dimension (not ideal here) */
+            /* width: 100vmin; */
+            /* Makes the width 80% of the viewport width */
+            width: 80vw;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Box element with a black border, centered horizontally, with responsive width (80% of the viewport width) -->
+    <div class="box">
+        This is a box
+    </div>
+
+    <!-- Main container with a black border, responsive width, and a minimum height of 80% of the viewport height.  -->
+    <div class="container">
+        <!-- A child div inside the container. Has a red border and occupies 50% of the parent's width.  -->
+        <div>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis necessitatibus quia quod iste
+            dolorem
+            voluptatem fuga quidem aspernatur. Nihil ipsa sint quae, beatae explicabo saepe impedit laboriosam magni
+            cupiditate expedita voluptates consequatur odit veritatis dolorum doloribus. Iure nemo odit dicta,
+            delectus,
+            modi reiciendis maiores ut quo adipisci libero quam laboriosam nihil voluptate natus nobis earum ad?
+
+            <!--  Another nested div inside the child div.Has a blue border and occupies 50% of its parent's width. -->
+
+            <div>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero omnis voluptas est aliquam, dolores
+                rem laudantium nulla maiores odio fugit, totam voluptatem saepe!
+            </div>
+        </div>
+    </div>
+    <div class="mycont">
+        I am another container
+    </div>
+
+</body>
+
+</html>

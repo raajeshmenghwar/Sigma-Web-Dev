@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Card Design</title> 
+    <style>
+        /* General body styling */
+        body {
+            display: flex; /* Enables flexbox for centering the card */
+            justify-content: center; /* Horizontally centers the card */
+            align-items: center; /* Vertically centers the card */
+            min-height: 100vh; /* Ensures the body takes up the full height of the viewport */
+            margin: 0; /* Removes default margin */
+            font-family: 'Arial', sans-serif; /* Sets the font for the page */
+            background-color: #eaf3f9; /* Light blue background color for a clean look */
+        }
+
+        /* Card container */
+        .card {
+            max-width: 350px; /* Sets a maximum width for the card */
+            width: 100%; /* Makes the card responsive */
+            border-radius: 16px; /* Rounds the corners of the card */
+            overflow: hidden; /* Hides anything outside the card's boundaries */
+            background-color: #fff; /* Sets the card's background color to white */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a soft shadow for depth */
+            text-align: center; /* Centers the content inside the card */
+        }
+
+        /* Image styling */
+        .card img {
+            width: 100%; /* Ensures the image spans the full width of the card */
+            height: auto; /* Maintains the aspect ratio of the image */
+        }
+
+        /* Tags container */
+        .tags {
+            display: flex; /* Uses flexbox to layout the tags horizontally */
+            justify-content: center; /* Centers the tags horizontally */
+            gap: 10px; /* Adds space between the tags */
+            margin: 15px 0; /* Adds vertical spacing above and below the tags */
+        }
+
+        /* Tag styling */
+        .tag {
+            background-color: #eaf6f9; /* Light blue background for the tags */
+            color: #007b83; /* Dark greenish-blue text color for contrast */
+            padding: 5px 12px; /* Adds padding inside the tag for a pill-shaped look */
+            border-radius: 20px; /* Makes the tags fully rounded */
+            font-size: 0.9em; /* Slightly reduces the font size for a neat appearance */
+        }
+
+        /* Content section */
+        .content {
+            padding: 20px; /* Adds spacing around the content inside the card */
+        }
+
+        /* Title styling */
+        .content h1 {
+            font-size: 1.5em; /* Sets a large font size for the title */
+            margin: 10px 0; /* Adds vertical spacing around the title */
+            color: #333; /* Dark gray color for the title text */
+        }
+
+        /* Description styling */
+        .content p {
+            color: #555; /* Medium gray color for the description text */
+            font-size: 1em; /* Sets a standard font size for the paragraph */
+            line-height: 1.5; /* Improves readability by increasing line spacing */
+        }
+
+        /* Button styling */
+        .btn {
+            display: inline-block; /* Allows the button to size itself naturally */
+            margin-top: 20px; /* Adds spacing above the button */
+            padding: 10px 20px; /* Adds space inside the button for better clickability */
+            font-size: 1em; /* Sets a readable font size for the button text */
+            color: #fff; /* White text color */
+            background-color: #007bff; /* Blue background color for the button */
+            border: none; /* Removes the default border */
+            border-radius: 20px; /* Rounds the button's corners */
+            cursor: pointer; /* Changes the cursor to a pointer on hover */
+            text-decoration: none; /* Removes the underline for the button text */
+            transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+        }
+
+        /* Button hover effect */
+        .btn:hover {
+            background-color: #0056b3; /* Darker blue color when hovered */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card"> <!-- Main card container -->
+        <img src="https://img.freepik.com/premium-photo/cute-teenage-boy-sitting-beach-looking-sea_72594-1823.jpg"
+            alt="A boy sitting near a lake surrounded by mountains"> <!-- Image at the top of the card -->
+        <div class="tags"> <!-- Container for the tags -->
+            <span class="tag">Nature</span> <!-- First tag -->
+            <span class="tag">Lake</span> <!-- Second tag -->
+        </div>
+        <div class="content"> <!-- Content container for the title, description, and button -->
+            <h1>Lago di Braies</h1> <!-- Card title -->
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consectetur sodales morbi dignissim sed diam
+                pharetra vitae ipsum odio.</p> <!-- Card description -->
+            <a href="#" class="btn">Read More</a> <!-- Call-to-action button -->
+        </div>
+    </div>
+</body>
+
+</html>
